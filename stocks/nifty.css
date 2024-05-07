@@ -207,22 +207,44 @@ p {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+.image-section {
+  position: relative;
+  overflow: hidden;
+  height: 800px; /* Adjust height as needed */
+}
 
+.contact-us {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Initially hide the image */
+  transition: opacity 0.5s ease-in-out; /* Smooth transition for 0.5 seconds */
+}
+
+.contact-us.visible {
+  opacity: 1; /* Show the image once in viewport */
+}
 
 .contact {
     color: #fff;
     position: relative;
     padding: 20px 0;
     text-align: center;
+    background-color: black;
   }
   
   .contact .background-image {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: -100%;
+    transition: left 1s; 
     z-index: -1;
   }
+  .visible {
+    left: 0; /* Move image to the left when it's visible */
+}
   
   .contact .content {
     position: relative;
@@ -338,7 +360,7 @@ p {
   .container {
     position: relative;
     width: 100vw; /* Fills viewport width */
-    height: 100vh; /* Fills viewport height */
+    height: 60vh; /* Fills viewport height */
     overflow: hidden; /* Prevents overflowing content */
   }
   
