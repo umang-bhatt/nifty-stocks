@@ -1,4 +1,4 @@
-.card-container {
+/* .card-container {
    overflow: hidden;
    position: relative;
    width: 300px;
@@ -32,4 +32,74 @@
 
 .right-arrow {
    right: 0;
-}
+} */
+
+.card-grid {
+   display: grid;
+   width: 40%;
+   justify-content: center;
+   margin: auto;
+   grid-template-columns: repeat(2, 1fr); /* Two columns, equal width */
+   grid-gap: 20px; /* Spacing between cards */
+ }
+ 
+ .card {
+   background-color: wheat;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 5px; /* Rounded corners */
+   padding: 20px;
+   transition: transform 0.3s ease-in-out;
+ }
+ .card-hni {
+   background-color:  orchid;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 5px; /* Rounded corners */
+   padding: 20px;
+   transition: transform 0.3s ease-in-out;
+ }
+ .card-premium {
+   background-color:  turquoise;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 5px; /* Rounded corners */
+   padding: 20px;
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ 
+ .card:hover {
+   transform: scale(1.03); /* Slight zoom on hover */
+ }
+ 
+ .card img {
+   width: 100%; /* Images fill card width */
+   height: 200px; /* Adjust image height as needed */
+   object-fit: cover; /* Scale images to fit within container */
+   border-radius: 5px; /* Rounded corners for images */
+ }
+ 
+ .card-content {
+   text-align: center;
+ }
+ 
+ .card h3 {
+   margin-bottom: 10px; /* Add space below heading */
+   font-weight: bold;
+ }
+ 
+ .card p {
+   margin-bottom: 15px; /* Add space below paragraph */
+ }
+ 
+ .card a {
+   text-decoration: none; /* Remove underline from link */
+   color: #333; /* Link color */
+   padding: 5px 10px; /* Add padding around link text */
+   border: 1px solid #ddd; /* Solid border around link */
+   border-radius: 5px; /* Rounded corners for link */
+   transition: background-color 0.3s ease-in-out;
+ }
+ 
+ .card a:hover {
+   background-color: #eee; /* Change background color on hover */
+ }
+ 

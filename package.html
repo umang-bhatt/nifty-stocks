@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="package.css">
-    </head>
+
+<head>
+    <link rel="stylesheet" href="package.css">
+</head>
+
 <body>
-    <div class="card-container">
-        <div class="card active">
-            <div class="content">
-                <h3>Card Title 1</h3>
-                <p>Card Description 1</p>
-            </div>
+    <h1 style="display: flex;justify-content: center;margin: auto; padding: 10px;background-color: grey;position: relative;">Our Packages</h1>
+    <div class="card-grid">
+        
+        <div class="card">
+          <div class="card-content">
+            <h3>BASIC PACKAGE</h3>
+            <h4>Rs - 36500/-</h4>
+            <p>Validity-44 DAYS</p>
+            <a href="#">Call Now</a>
+          </div>
         </div>
         <div class="card">
-            <div class="content">
-                <h3>Card Title 2</h3>
-                <p>Card Description 2</p>
-            </div>
+          <div class="card-content">
+            <h3>PREMIUM PACKAGE</h3>
+            <h4>Rs - 75500/-</h4>
+            <p>Validity- 66 days</p>
+            <a href="#">Call Now</a>
+          </div>
         </div>
-    </div>
-    
-    
-    <button class="arrow left-arrow" disabled>&#8592;</button>
-    <button class="arrow right-arrow">&#8594;</button>
+        <div class="card">
+          
+          <div class="card-content">
+            <h3>PLATINUM PACKAGE</h3>
+            <h4>Rs - 1,05,000/-</h4>
+            <p>Validity- 88 days</p>
+            <a href="#">Call Now</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3>Supreme package</h3>
+            <h4>Rs - 1,49,999/-</h4>
+            <p>Validity - 150 days </p>
+            <a href="#">Call Now</a>
+          </div>
+        </div>
+        <div class="card-hni">
+          <div class="card-content">
+            <h3>HNI PACKAGE</h3>
+            <h4>Rs - 2,99,999/-</h4>
+            <p>Validity - 180 DAYS</p>
+            <a href="#" target="_blank" style="text-decoration: none;">📞 Live Call Support</a>
+          </div>
+        </div>
+        <div class="card-premium">
+          <div class="card-content">
+            <h3>HNI PREMIUM PACKAGE</h3>
+            <h4>Rs - 4,99,999/-</h4>
+            <p>Validity -365 DAYS</p>
+            <a href="#" target="_blank" style="text-decoration: none;">📞 Live Call Support</a>
+          </div>
+        </div>
+      </div>
+      
 </body>
 <script>
     const cardContainer = document.querySelector('.card-container');
@@ -61,5 +99,5 @@
 
     updateCardVisibility(); // Initial card visibility setup
 </script>
-  </html>
-  
+
+</html>
