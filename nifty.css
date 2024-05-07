@@ -1,0 +1,395 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+   font-family: Arial, Helvetica, sans-serif;
+   animation: fadeInAnimation ease 3s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+  
+}
+.actual-content{
+  display: none; 
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.main{
+  background-color: #000;
+}
+.button-and-text .justified-disclaimer{
+  background-color: #000;
+  
+}
+
+ul{
+    float:right;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    padding: 10px 70px;
+    align-items: center;
+    color:#ffffff;
+    
+}
+
+ul li a:hover{
+    color: #59d5ff;
+    transition: 1.5s;
+}
+
+ul li ul.dropdown{
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.image-container {
+  height: 300px; /* Adjust container height as needed */
+  overflow: hidden; /* Clip content that overflows */
+}
+
+.image-container img {
+  position: relative; /* Enable positioning for scroll effect */
+  opacity: 1; /* Initial opacity */
+  transition: opacity 1s ease-in-out; /* Add smooth transition */
+}
+
+.hidden { /* Class for hiding the image */
+  opacity: 0;
+}
+
+.trade h1{
+  font-weight: 200;
+  text-align: center;
+  font-size: 6vh;
+  
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  margin: 10px;
+  padding: 50px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.content {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+
+
+
+.justified-disclaimer {
+  text-align: center;
+  justify-content: center; /* Center the text horizontally */
+  width: fit-content;
+  font-style: italic;
+  color: #FF0000;
+  font-size: small;
+  font-weight: 400;
+  line-height: 1.5; /* Adjust line height for better readability and to maintain vertical alignment */
+  padding: 50px; /* Adjust padding to create space between margin and paragraph */
+  margin: 0 auto; /* Center horizontally */
+}
+
+
+.button-and-text {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+}
+
+.justified-disclaimer p {
+  word-spacing: 0.5em; /* Adjust word spacing */
+}
+
+.btn{
+    font-style: italic;
+    display: inline-block; /* Make the button behave like inline content */
+    background-color: transparent; /* Transparent background for seamless look */
+    border: none; 
+    color: blue; 
+    padding: 1px 5px; 
+    cursor: pointer; 
+    margin-left: 5px;
+}
+
+.risk {
+  background-color: black;
+  text-align: center; /* Align text center */
+  justify-content: center; /* Align flex items horizontally */
+  align-items: center; /* Align flex items vertically */
+  display: flex; /* Use flexbox for center alignment */
+  flex-direction: column; /* Align children vertically */
+}
+
+.risks h1 {
+  padding: 30px;
+  color: red;
+  font-weight: 100;
+}
+
+p {
+  padding: 10px;
+  margin: 20px; /* Adjust margin as needed */
+  animation: fadeIn ease 3s; /* Add animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mission{
+  background-color: #000;
+}
+.mission h1{
+  padding: 10px;
+  text-align: center;
+  color: green;
+  font-weight: 100;
+  margin: 5px;
+
+}
+
+.mis p{
+  color: rgb(54, 252, 239);
+  animation: fadeIn ease 3s;
+  padding: auto;
+}
+ 
+.ion p{
+  color: #fff;
+
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.contact {
+    color: #fff;
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .contact .background-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  
+  .contact .content {
+    position: relative;
+    z-index: 1;
+  }
+  .contact .content h1{
+    color: #000;
+  }
+  
+  
+  .contact .container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact .container .contactInfo {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .contact .container .contactForm {
+    flex: 1;
+    max-width: 500px;
+    margin-top: 150px;
+  }
+  
+  .contact .container .contactInfo .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact .container .contactInfo .box .icon {
+    font-size: 30px;
+    color: #ffffff;
+    transform: rotate(100deg); /* Rotate the icon 180 degrees */
+  }
+  
+  
+  .contact .container .contactInfo .box .text {
+    margin-left: 15px;
+    font-size: 20px;
+  }
+  
+  .contact .container .contactForm form h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #ffffff;
+  }
+  
+  .contact .container .contactForm form .inputBox {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .contact .container .contactForm form .inputBox input,
+  .contact .container .contactForm form .inputBox textarea {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    background: transparent;
+    resize: none;
+  }
+  
+  .contact .container .contactForm form .inputBox input:focus,
+  .contact .container .contactForm form .inputBox textarea:focus {
+    border-bottom: 2px solid #01060b;
+  }
+  
+  .contact .container .contactForm form .inputBox span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: all 0.5s;
+  }
+  
+  .contact .container .contactForm form .inputBox input:focus + span,
+  .contact .container .contactForm form .inputBox textarea:focus + span,
+  .contact .container .contactForm form .inputBox input:valid + span,
+  .contact .container .contactForm form .inputBox textarea:valid + span {
+    transform: translateY(-30px);
+    font-size: 15px;
+    color: #017cff;
+  }
+  
+  .contact .container .contactForm form .inputBox input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color:  #007bff;
+    transition: all 0.5s;
+  }
+  
+  .contact .container .contactForm form .inputBox input[type="submit"]:hover {
+    background-color: #333;
+  }
+/* loader Image for nifty */
+  .container {
+    position: relative;
+    width: 100vw; /* Fills viewport width */
+    height: 100vh; /* Fills viewport height */
+    overflow: hidden; /* Prevents overflowing content */
+  }
+  
+  .image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+  }
+  #split-image {
+    width: 100%; /* Set width to 50% of container width */
+  height: 100%;
+    clip-path: polygon(100% 100%, 100% 0, 50% 0, 50% 100%); /* Clip left half */
+    position: absolute;
+  top: 0;
+  left: 0;
+  animation: linear 1s alternate;
+  animation-name: run-1;
+  animation-duration: 1s
+  }
+  #split-image1 {
+    width: 100%; /* Set width to 50% of container width */
+    height: 100%;
+  
+    clip-path: polygon(0% 100%, 50% 100%, 50% 0, 0 0); /* Clip left half */
+    position: absolute;
+  top: 0;
+  right: 0; /* Position at right side initially */
+  animation: linear 1s alternate;
+  animation-name: run-2;
+  animation-duration: 1s;
+  }
+  @keyframes run-2 {
+    0% {
+      left: -100%; 
+      transform: translateX(0);
+    }
+    100% {
+      left: 0; 
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes run-1 {
+    0% {
+        left: 100%; /* Start completely hidden off-screen left */
+        transform: translateX(0);
+      }
+      100% {
+        left: 2%; /* Animate to left 0 position */
+        transform: translateX(0);
+      }
+  }

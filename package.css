@@ -1,0 +1,35 @@
+.card-container {
+   overflow: hidden;
+   position: relative;
+   width: 300px;
+   margin: 0 auto;
+}
+
+.card {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   transition: transform 0.5s ease-in-out;
+}
+
+.arrow {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   padding: 10px;
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.left-arrow {
+   left: 0;
+}
+
+.right-arrow {
+   right: 0;
+}

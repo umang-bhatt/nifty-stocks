@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="package.css">
+    </head>
+<body>
+    <div class="card-container">
+        <div class="card active">
+            <div class="content">
+                <h3>Card Title 1</h3>
+                <p>Card Description 1</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h3>Card Title 2</h3>
+                <p>Card Description 2</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <button class="arrow left-arrow" disabled>&#8592;</button>
+    <button class="arrow right-arrow">&#8594;</button>
+</body>
+<script>
+    const cardContainer = document.querySelector('.card-container');
+    const cards = cardContainer.querySelectorAll('.card');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+
+    let currentCardIndex = 0;
+
+    function updateCardVisibility() {
+        cards.forEach((card, index) => {
+            if (index === currentCardIndex) {
+                card.style.transform = 'translateX(0)';
+            } else {
+                card.style.transform = 'translateX(100%)';
+            }
+        });
+
+        // Update arrow button states
+        leftArrow.disabled = currentCardIndex === 0;
+        rightArrow.disabled = currentCardIndex === cards.length - 1;
+    }
+
+    rightArrow.addEventListener('click', () => {
+        if (currentCardIndex < cards.length - 1) {
+            currentCardIndex++;
+            updateCardVisibility();
+        }
+    });
+
+    leftArrow.addEventListener('click', () => {
+        if (currentCardIndex > 0) {
+            currentCardIndex--;
+            updateCardVisibility();
+        }
+    });
+
+    updateCardVisibility(); // Initial card visibility setup
+</script>
+  </html>
+  
